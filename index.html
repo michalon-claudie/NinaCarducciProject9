@@ -4,8 +4,8 @@
 	<title>Nina Carducci Photographer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Official Website of Nina Carducci, Professional Photographer">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="./assets/style.css" media="screen">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
@@ -19,7 +19,15 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram_Logo"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+				<img src="assets/images/instagram.png" 
+				rcset="./assets/images/instagram.webp 40w"
+				sizes="(max-width: 40px) 100vw "
+				width="20"
+				height="auto"
+				alt="Instagram_Logo">
+			</a>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -33,13 +41,31 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/walkingManWithStripes.webp" class="d-block w-100" alt="walkingManWithStripes">
+				<img src="./assets/images/slider/walkingManWithStripes.webp" 
+				srcset="./assets/images/slider/walkingManWithStripes-700.webp 700w,
+						./assets/images/slider/walkingManWithStripes.webp 1280w"
+				sizes="(max-width: 700px) 100vw, 1280px"
+				width="1280"
+				height="584"
+				class="d-block w-100" alt="walkingManWithStripes">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/cheeringCrowd.webp" class="d-block w-100" alt="cheeringCrowd">
+				<img src="./assets/images/slider/cheeringCrowd.webp" 
+				srcset="./assets/images/slider/cheeringCrowd-700.webp 700w,
+						./assets/images/slider/cheeringCrowd.webp 1280w"
+				sizes="(max-width: 700px) 100vw, 1280px"
+				width="1280"
+				height="584"
+				class="d-block w-100" alt="cheeringCrowd">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/weddingPictures.webp" class="d-block w-100" alt="weddingPictures">
+				<img src="./assets/images/slider/weddingPictures.webp" 
+				srcset="./assets/images/slider/weddingPictures-700.webp 700w,
+						./assets/images/slider/weddingPictures.webp 1280w"
+				sizes="(max-width: 700px) 100vw, 1280px"
+				width="700"
+         		height="auto"
+				class="d-block w-100" alt="weddingPictures">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -54,7 +80,12 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Photographer's Picture">
+		<img src="./assets/images/nina.webp" 
+		srcset="./assets/images/nina.webp 470w"
+		sizes="(max-width: 470px) 100vw "
+		width="350"
+		height="auto"
+		alt="Photographer's Picture">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -153,7 +184,12 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="PictureOfCamera">
+			<img src="./assets/images/camera.webp" 
+			srcset="./assets/images/camera.webp 470w"
+			sizes="(max-width: 470px) 100vw "
+			width="470"
+			height="264"
+			alt="PictureOfCamera">
 		</div>
 	</div>
 </div>
