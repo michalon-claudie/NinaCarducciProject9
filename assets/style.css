@@ -79,13 +79,22 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
+.about-me__introduction{
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
+	line-height: 1.2;
+	display: block;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
 }
-#about-me p {
+.about-me_paragraphe {
 	width: 80%;
 	font-size: 14px;
 }
