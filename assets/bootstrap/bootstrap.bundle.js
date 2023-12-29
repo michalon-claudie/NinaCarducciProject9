@@ -32,6 +32,15 @@
    * --------------------------------------------------------------------------
    */
 
+
+  const getUID = prefix => {
+    do {
+      prefix += Math.floor(Math.random() * MAX_UID);
+    } while (document.getElementById(prefix));
+
+    return prefix;
+  };
+
   const getSelector = element => {
     let selector = element.getAttribute('data-bs-target');
 
@@ -56,7 +65,15 @@
     return selector;
   };
 
+  const getSelectorFromElement = element => {
+    const selector = getSelector(element);
 
+    if (selector) {
+      return document.querySelector(selector) ? selector : null;
+    }
+
+    return null;
+  };
 
   const getElementFromSelector = element => {
     const selector = getSelector(element);
